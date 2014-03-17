@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0222693618D76FF000C74029 /* BRFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0222693518D76FF000C74029 /* BRFirstVC.m */; };
+		0222694718D7739B00C74029 /* RDContainer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0222693A18D7739B00C74029 /* RDContainer.mm */; };
+		0222694818D7739B00C74029 /* RDMediaOverlaysSmilModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0222693C18D7739B00C74029 /* RDMediaOverlaysSmilModel.mm */; };
+		0222694918D7739B00C74029 /* RDNavigationElement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0222693E18D7739B00C74029 /* RDNavigationElement.mm */; };
+		0222694A18D7739B00C74029 /* RDPackage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0222694018D7739B00C74029 /* RDPackage.mm */; };
+		0222694B18D7739B00C74029 /* RDPackageResource.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0222694218D7739B00C74029 /* RDPackageResource.mm */; };
+		0222694C18D7739B00C74029 /* RDSmilData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0222694418D7739B00C74029 /* RDSmilData.mm */; };
+		0222694D18D7739B00C74029 /* RDSpineItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0222694618D7739B00C74029 /* RDSpineItem.mm */; };
 		02A4E33D18D7593E00B28B64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A4E33C18D7593E00B28B64 /* Foundation.framework */; };
 		02A4E33F18D7593E00B28B64 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A4E33E18D7593E00B28B64 /* CoreGraphics.framework */; };
 		02A4E34118D7593E00B28B64 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02A4E34018D7593E00B28B64 /* UIKit.framework */; };
@@ -32,6 +40,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0222693418D76FF000C74029 /* BRFirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRFirstVC.h; sourceTree = "<group>"; };
+		0222693518D76FF000C74029 /* BRFirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRFirstVC.m; sourceTree = "<group>"; };
+		0222693918D7739B00C74029 /* RDContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDContainer.h; sourceTree = "<group>"; };
+		0222693A18D7739B00C74029 /* RDContainer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDContainer.mm; sourceTree = "<group>"; };
+		0222693B18D7739B00C74029 /* RDMediaOverlaysSmilModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMediaOverlaysSmilModel.h; sourceTree = "<group>"; };
+		0222693C18D7739B00C74029 /* RDMediaOverlaysSmilModel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDMediaOverlaysSmilModel.mm; sourceTree = "<group>"; };
+		0222693D18D7739B00C74029 /* RDNavigationElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDNavigationElement.h; sourceTree = "<group>"; };
+		0222693E18D7739B00C74029 /* RDNavigationElement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDNavigationElement.mm; sourceTree = "<group>"; };
+		0222693F18D7739B00C74029 /* RDPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDPackage.h; sourceTree = "<group>"; };
+		0222694018D7739B00C74029 /* RDPackage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDPackage.mm; sourceTree = "<group>"; };
+		0222694118D7739B00C74029 /* RDPackageResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDPackageResource.h; sourceTree = "<group>"; };
+		0222694218D7739B00C74029 /* RDPackageResource.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDPackageResource.mm; sourceTree = "<group>"; };
+		0222694318D7739B00C74029 /* RDSmilData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDSmilData.h; sourceTree = "<group>"; };
+		0222694418D7739B00C74029 /* RDSmilData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDSmilData.mm; sourceTree = "<group>"; };
+		0222694518D7739B00C74029 /* RDSpineItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDSpineItem.h; sourceTree = "<group>"; };
+		0222694618D7739B00C74029 /* RDSpineItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RDSpineItem.mm; sourceTree = "<group>"; };
 		02A4E33918D7593E00B28B64 /* BooklEpicReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BooklEpicReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A4E33C18D7593E00B28B64 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		02A4E33E18D7593E00B28B64 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,6 +98,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0222693818D7738B00C74029 /* RDServices */ = {
+			isa = PBXGroup;
+			children = (
+				0222693918D7739B00C74029 /* RDContainer.h */,
+				0222693A18D7739B00C74029 /* RDContainer.mm */,
+				0222693B18D7739B00C74029 /* RDMediaOverlaysSmilModel.h */,
+				0222693C18D7739B00C74029 /* RDMediaOverlaysSmilModel.mm */,
+				0222693D18D7739B00C74029 /* RDNavigationElement.h */,
+				0222693E18D7739B00C74029 /* RDNavigationElement.mm */,
+				0222693F18D7739B00C74029 /* RDPackage.h */,
+				0222694018D7739B00C74029 /* RDPackage.mm */,
+				0222694118D7739B00C74029 /* RDPackageResource.h */,
+				0222694218D7739B00C74029 /* RDPackageResource.mm */,
+				0222694318D7739B00C74029 /* RDSmilData.h */,
+				0222694418D7739B00C74029 /* RDSmilData.mm */,
+				0222694518D7739B00C74029 /* RDSpineItem.h */,
+				0222694618D7739B00C74029 /* RDSpineItem.mm */,
+			);
+			name = RDServices;
+			sourceTree = "<group>";
+		};
+		0222694E18D773D100C74029 /* External */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
 		02A4E33018D7593E00B28B64 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +159,8 @@
 		02A4E34218D7593E00B28B64 /* BooklEpicReader */ = {
 			isa = PBXGroup;
 			children = (
+				0222694E18D773D100C74029 /* External */,
+				02A4E36E18D76F3D00B28B64 /* Classes */,
 				02A4E34B18D7593E00B28B64 /* BRAppDelegate.h */,
 				02A4E34C18D7593E00B28B64 /* BRAppDelegate.m */,
 				02A4E34E18D7593E00B28B64 /* Images.xcassets */,
@@ -142,6 +196,16 @@
 				02A4E35E18D7593F00B28B64 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02A4E36E18D76F3D00B28B64 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0222693818D7738B00C74029 /* RDServices */,
+				0222693418D76FF000C74029 /* BRFirstVC.h */,
+				0222693518D76FF000C74029 /* BRFirstVC.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +304,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0222694918D7739B00C74029 /* RDNavigationElement.mm in Sources */,
 				02A4E34D18D7593E00B28B64 /* BRAppDelegate.m in Sources */,
+				0222694A18D7739B00C74029 /* RDPackage.mm in Sources */,
+				0222693618D76FF000C74029 /* BRFirstVC.m in Sources */,
 				02A4E34918D7593E00B28B64 /* main.m in Sources */,
+				0222694818D7739B00C74029 /* RDMediaOverlaysSmilModel.mm in Sources */,
+				0222694D18D7739B00C74029 /* RDSpineItem.mm in Sources */,
+				0222694B18D7739B00C74029 /* RDPackageResource.mm in Sources */,
+				0222694718D7739B00C74029 /* RDContainer.mm in Sources */,
+				0222694C18D7739B00C74029 /* RDSmilData.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +516,7 @@
 				02A4E36718D7593F00B28B64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02A4E36818D7593F00B28B64 /* Build configuration list for PBXNativeTarget "BooklEpicReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +525,7 @@
 				02A4E36A18D7593F00B28B64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
