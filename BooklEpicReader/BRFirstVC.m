@@ -46,18 +46,18 @@
 
 -(void)startReadingWithElement:(NSInteger)element andPackage:(NSInteger)package
 {
-    RDNavigationElement *element = [m_element.children objectAtIndex:indexPath.row];
-    
-	EPubViewController *c = [[[EPubViewController alloc]
-                              initWithContainer:m_container
-                              package:m_package
-                              navElement:element] autorelease];
-    
-	if (c != nil) {
-		[self.navigationController pushViewController:c animated:YES];
-	}
-    
-	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    RDNavigationElement *element = [m_element.children objectAtIndex:indexPath.row];
+//    
+//	EPubViewController *c = [[[EPubViewController alloc]
+//                              initWithContainer:m_container
+//                              package:m_package
+//                              navElement:element] autorelease];
+//    
+//	if (c != nil) {
+//		[self.navigationController pushViewController:c animated:YES];
+//	}
+//    
+//	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 

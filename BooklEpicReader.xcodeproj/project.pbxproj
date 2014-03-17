@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0211353B18D7B264000706A3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0211353A18D7B264000706A3 /* CFNetwork.framework */; };
+		0211353C18D7B268000706A3 /* libePub3-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0211353718D7B258000706A3 /* libePub3-iOS.a */; };
+		0211353E18D7B270000706A3 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0211353D18D7B270000706A3 /* libxml2.dylib */; };
+		0211354018D7B277000706A3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0211353F18D7B277000706A3 /* libz.dylib */; };
 		0222693618D76FF000C74029 /* BRFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0222693518D76FF000C74029 /* BRFirstVC.m */; };
 		0222694718D7739B00C74029 /* RDContainer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0222693A18D7739B00C74029 /* RDContainer.mm */; };
 		0222694818D7739B00C74029 /* RDMediaOverlaysSmilModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0222693C18D7739B00C74029 /* RDMediaOverlaysSmilModel.mm */; };
@@ -30,6 +34,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0211353418D7B258000706A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0211352E18D7B257000706A3 /* ePub3.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ABA72C241655382E003125FF;
+			remoteInfo = ePub3;
+		};
+		0211353618D7B258000706A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0211352E18D7B257000706A3 /* ePub3.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ABA4BAE016ADF5A600161B77;
+			remoteInfo = "ePub3-iOS";
+		};
+		0211353818D7B258000706A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0211352E18D7B257000706A3 /* ePub3.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AB61CE4A1694845700299BB1;
+			remoteInfo = UnitTests;
+		};
 		02A4E35918D7593F00B28B64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 02A4E33118D7593E00B28B64 /* Project object */;
@@ -40,6 +65,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0211352E18D7B257000706A3 /* ePub3.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ePub3.xcodeproj; path = "Framework/readium-sdk/Platform/Apple/ePub3.xcodeproj"; sourceTree = "<group>"; };
+		0211353A18D7B264000706A3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		0211353D18D7B270000706A3 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		0211353F18D7B277000706A3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		0222693418D76FF000C74029 /* BRFirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRFirstVC.h; sourceTree = "<group>"; };
 		0222693518D76FF000C74029 /* BRFirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRFirstVC.m; sourceTree = "<group>"; };
 		0222693918D7739B00C74029 /* RDContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDContainer.h; sourceTree = "<group>"; };
@@ -79,6 +108,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0211354018D7B277000706A3 /* libz.dylib in Frameworks */,
+				0211353E18D7B270000706A3 /* libxml2.dylib in Frameworks */,
+				0211353C18D7B268000706A3 /* libePub3-iOS.a in Frameworks */,
+				0211353B18D7B264000706A3 /* CFNetwork.framework in Frameworks */,
 				02A4E33F18D7593E00B28B64 /* CoreGraphics.framework in Frameworks */,
 				02A4E34118D7593E00B28B64 /* UIKit.framework in Frameworks */,
 				02A4E33D18D7593E00B28B64 /* Foundation.framework in Frameworks */,
@@ -98,6 +131,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0211352F18D7B257000706A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0211353518D7B258000706A3 /* ePub3.dylib */,
+				0211353718D7B258000706A3 /* libePub3-iOS.a */,
+				0211353918D7B258000706A3 /* UnitTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0222693818D7738B00C74029 /* RDServices */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +172,7 @@
 		02A4E33018D7593E00B28B64 = {
 			isa = PBXGroup;
 			children = (
+				0211352E18D7B257000706A3 /* ePub3.xcodeproj */,
 				02A4E34218D7593E00B28B64 /* BooklEpicReader */,
 				02A4E35B18D7593F00B28B64 /* BooklEpicReaderTests */,
 				02A4E33B18D7593E00B28B64 /* Frameworks */,
@@ -148,6 +192,9 @@
 		02A4E33B18D7593E00B28B64 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0211353F18D7B277000706A3 /* libz.dylib */,
+				0211353D18D7B270000706A3 /* libxml2.dylib */,
+				0211353A18D7B264000706A3 /* CFNetwork.framework */,
 				02A4E33C18D7593E00B28B64 /* Foundation.framework */,
 				02A4E33E18D7593E00B28B64 /* CoreGraphics.framework */,
 				02A4E34018D7593E00B28B64 /* UIKit.framework */,
@@ -271,6 +318,12 @@
 			mainGroup = 02A4E33018D7593E00B28B64;
 			productRefGroup = 02A4E33A18D7593E00B28B64 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0211352F18D7B257000706A3 /* Products */;
+					ProjectRef = 0211352E18D7B257000706A3 /* ePub3.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				02A4E33818D7593E00B28B64 /* BooklEpicReader */,
@@ -278,6 +331,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0211353518D7B258000706A3 /* ePub3.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = ePub3.dylib;
+			remoteRef = 0211353418D7B258000706A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0211353718D7B258000706A3 /* libePub3-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libePub3-iOS.a";
+			remoteRef = 0211353618D7B258000706A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0211353918D7B258000706A3 /* UnitTests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = UnitTests;
+			remoteRef = 0211353818D7B258000706A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		02A4E33718D7593E00B28B64 /* Resources */ = {
@@ -436,6 +513,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BooklEpicReader/BooklEpicReader-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2",
+					"${SRCROOT}/Framework/readium-sdk/Platform/Apple/include",
+				);
 				INFOPLIST_FILE = "BooklEpicReader/BooklEpicReader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -449,6 +532,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BooklEpicReader/BooklEpicReader-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SDKROOT}/usr/include/libxml2",
+					"${SRCROOT}/Framework/readium-sdk/Platform/Apple/include",
+				);
 				INFOPLIST_FILE = "BooklEpicReader/BooklEpicReader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
