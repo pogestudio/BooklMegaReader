@@ -12,6 +12,11 @@
 		0211353E18D7B270000706A3 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0211353D18D7B270000706A3 /* libxml2.dylib */; };
 		0211354018D7B277000706A3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0211353F18D7B277000706A3 /* libz.dylib */; };
 		0211354518D7B3CA000706A3 /* BRConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0211354418D7B3CA000706A3 /* BRConstants.m */; };
+		0211354918D7B950000706A3 /* BREpubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0211354818D7B950000706A3 /* BREpubViewController.m */; };
+		0211355618D7BAC9000706A3 /* PackageMetadataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0211354F18D7BAC9000706A3 /* PackageMetadataController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0211355718D7BAC9000706A3 /* PackageResourceConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0211355118D7BAC9000706A3 /* PackageResourceConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0211355818D7BAC9000706A3 /* PackageResourceResponseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0211355318D7BAC9000706A3 /* PackageResourceResponseOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0211355918D7BAC9000706A3 /* PackageResourceServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0211355518D7BAC9000706A3 /* PackageResourceServer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0222693618D76FF000C74029 /* BRFirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0222693518D76FF000C74029 /* BRFirstVC.m */; };
 		0222694718D7739B00C74029 /* RDContainer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0222693A18D7739B00C74029 /* RDContainer.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		0222694818D7739B00C74029 /* RDMediaOverlaysSmilModel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0222693C18D7739B00C74029 /* RDMediaOverlaysSmilModel.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -56,6 +61,13 @@
 			remoteGlobalIDString = AB61CE4A1694845700299BB1;
 			remoteInfo = UnitTests;
 		};
+		0211358B18D7BCA0000706A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0211358718D7BCA0000706A3 /* SimpleHTTPServer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 834313C5180C21490022C653;
+			remoteInfo = SimpleHTTPServer;
+		};
 		02A4E35918D7593F00B28B64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 02A4E33118D7593E00B28B64 /* Project object */;
@@ -72,6 +84,17 @@
 		0211353F18D7B277000706A3 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		0211354318D7B3CA000706A3 /* BRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRConstants.h; sourceTree = "<group>"; };
 		0211354418D7B3CA000706A3 /* BRConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRConstants.m; sourceTree = "<group>"; };
+		0211354718D7B950000706A3 /* BREpubViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREpubViewController.h; sourceTree = "<group>"; };
+		0211354818D7B950000706A3 /* BREpubViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREpubViewController.m; sourceTree = "<group>"; };
+		0211354E18D7BAC9000706A3 /* PackageMetadataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageMetadataController.h; sourceTree = "<group>"; };
+		0211354F18D7BAC9000706A3 /* PackageMetadataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageMetadataController.m; sourceTree = "<group>"; };
+		0211355018D7BAC9000706A3 /* PackageResourceConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageResourceConnection.h; sourceTree = "<group>"; };
+		0211355118D7BAC9000706A3 /* PackageResourceConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageResourceConnection.m; sourceTree = "<group>"; };
+		0211355218D7BAC9000706A3 /* PackageResourceResponseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageResourceResponseOperation.h; sourceTree = "<group>"; };
+		0211355318D7BAC9000706A3 /* PackageResourceResponseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageResourceResponseOperation.m; sourceTree = "<group>"; };
+		0211355418D7BAC9000706A3 /* PackageResourceServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageResourceServer.h; sourceTree = "<group>"; };
+		0211355518D7BAC9000706A3 /* PackageResourceServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageResourceServer.m; sourceTree = "<group>"; };
+		0211358718D7BCA0000706A3 /* SimpleHTTPServer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SimpleHTTPServer.xcodeproj; path = External/SimpleHTTPServer/SimpleHTTPServer.xcodeproj; sourceTree = "<group>"; };
 		0222693418D76FF000C74029 /* BRFirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRFirstVC.h; sourceTree = "<group>"; };
 		0222693518D76FF000C74029 /* BRFirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRFirstVC.m; sourceTree = "<group>"; };
 		0222693918D7739B00C74029 /* RDContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDContainer.h; sourceTree = "<group>"; };
@@ -149,6 +172,8 @@
 			children = (
 				0222693418D76FF000C74029 /* BRFirstVC.h */,
 				0222693518D76FF000C74029 /* BRFirstVC.m */,
+				0211354718D7B950000706A3 /* BREpubViewController.h */,
+				0211354818D7B950000706A3 /* BREpubViewController.m */,
 			);
 			name = Regular;
 			sourceTree = "<group>";
@@ -160,6 +185,29 @@
 				0211354418D7B3CA000706A3 /* BRConstants.m */,
 			);
 			name = Misc;
+			sourceTree = "<group>";
+		};
+		0211354D18D7BABF000706A3 /* PackageResource */ = {
+			isa = PBXGroup;
+			children = (
+				0211354E18D7BAC9000706A3 /* PackageMetadataController.h */,
+				0211354F18D7BAC9000706A3 /* PackageMetadataController.m */,
+				0211355018D7BAC9000706A3 /* PackageResourceConnection.h */,
+				0211355118D7BAC9000706A3 /* PackageResourceConnection.m */,
+				0211355218D7BAC9000706A3 /* PackageResourceResponseOperation.h */,
+				0211355318D7BAC9000706A3 /* PackageResourceResponseOperation.m */,
+				0211355418D7BAC9000706A3 /* PackageResourceServer.h */,
+				0211355518D7BAC9000706A3 /* PackageResourceServer.m */,
+			);
+			name = PackageResource;
+			sourceTree = "<group>";
+		};
+		0211358818D7BCA0000706A3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0211358C18D7BCA0000706A3 /* SimpleHTTPServer.dylib */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		0222693818D7738B00C74029 /* RDServices */ = {
@@ -193,6 +241,7 @@
 		02A4E33018D7593E00B28B64 = {
 			isa = PBXGroup;
 			children = (
+				0211358718D7BCA0000706A3 /* SimpleHTTPServer.xcodeproj */,
 				0211352E18D7B257000706A3 /* ePub3.xcodeproj */,
 				02A4E34218D7593E00B28B64 /* BooklEpicReader */,
 				02A4E35B18D7593F00B28B64 /* BooklEpicReaderTests */,
@@ -269,6 +318,7 @@
 		02A4E36E18D76F3D00B28B64 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0211354D18D7BABF000706A3 /* PackageResource */,
 				0211354218D7B3B9000706A3 /* Misc */,
 				0211354118D7B3AD000706A3 /* Regular */,
 				0222693818D7738B00C74029 /* RDServices */,
@@ -344,6 +394,10 @@
 					ProductGroup = 0211352F18D7B257000706A3 /* Products */;
 					ProjectRef = 0211352E18D7B257000706A3 /* ePub3.xcodeproj */;
 				},
+				{
+					ProductGroup = 0211358818D7BCA0000706A3 /* Products */;
+					ProjectRef = 0211358718D7BCA0000706A3 /* SimpleHTTPServer.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -375,6 +429,13 @@
 			remoteRef = 0211353818D7B258000706A3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		0211358C18D7BCA0000706A3 /* SimpleHTTPServer.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = SimpleHTTPServer.dylib;
+			remoteRef = 0211358B18D7BCA0000706A3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -404,13 +465,18 @@
 			files = (
 				0222694918D7739B00C74029 /* RDNavigationElement.mm in Sources */,
 				0211354518D7B3CA000706A3 /* BRConstants.m in Sources */,
+				0211355718D7BAC9000706A3 /* PackageResourceConnection.m in Sources */,
 				02A4E34D18D7593E00B28B64 /* BRAppDelegate.m in Sources */,
+				0211355618D7BAC9000706A3 /* PackageMetadataController.m in Sources */,
 				0222694A18D7739B00C74029 /* RDPackage.mm in Sources */,
+				0211355818D7BAC9000706A3 /* PackageResourceResponseOperation.m in Sources */,
+				0211354918D7B950000706A3 /* BREpubViewController.m in Sources */,
 				0222693618D76FF000C74029 /* BRFirstVC.m in Sources */,
 				02A4E34918D7593E00B28B64 /* main.m in Sources */,
 				0222694818D7739B00C74029 /* RDMediaOverlaysSmilModel.mm in Sources */,
 				0222694D18D7739B00C74029 /* RDSpineItem.mm in Sources */,
 				0222694B18D7739B00C74029 /* RDPackageResource.mm in Sources */,
+				0211355918D7BAC9000706A3 /* PackageResourceServer.m in Sources */,
 				0222694718D7739B00C74029 /* RDContainer.mm in Sources */,
 				0222694C18D7739B00C74029 /* RDSmilData.mm in Sources */,
 			);
@@ -539,7 +605,8 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"${SDKROOT}/usr/include/libxml2",
-					"${SRCROOT}/Framework/readium-sdk/Platform/Apple/include",
+					"${SRCROOT}/Framework/readium-sdk/Platform/Apple/include/**",
+					"${SRCROOT}/External/SimpleHTTPServer/**",
 				);
 				INFOPLIST_FILE = "BooklEpicReader/BooklEpicReader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -558,7 +625,8 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"${SDKROOT}/usr/include/libxml2",
-					"${SRCROOT}/Framework/readium-sdk/Platform/Apple/include",
+					"${SRCROOT}/Framework/readium-sdk/Platform/Apple/include/**",
+					"${SRCROOT}/External/SimpleHTTPServer/**",
 				);
 				INFOPLIST_FILE = "BooklEpicReader/BooklEpicReader-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";

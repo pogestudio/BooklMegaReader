@@ -8,6 +8,7 @@
 
 #import "BRFirstVC.h"
 #import "RDNavigationElement.h"
+#import "RDPackage.h"
 
 @interface BRFirstVC ()
 
@@ -37,27 +38,27 @@
 }
 
 -(void)createElement{
-    
+        RDNavigationElement *element = [m_element.children objectAtIndex:indexPath.row];
 }
 
 -(void)createPackage{
     
 }
 
--(void)startReadingWithElement:(NSInteger)element andPackage:(NSInteger)package
+-(void)startReadingWithElement:(RDNavigationElement*)element andPackage:(RDPackage*)package
 {
-//    RDNavigationElement *element = [m_element.children objectAtIndex:indexPath.row];
-//    
-//	EPubViewController *c = [[[EPubViewController alloc]
-//                              initWithContainer:m_container
-//                              package:m_package
-//                              navElement:element] autorelease];
-//    
-//	if (c != nil) {
-//		[self.navigationController pushViewController:c animated:YES];
-//	}
-//    
-//	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    
+	EPubViewController *c = [[[EPubViewController alloc]
+                              initWithContainer:m_container
+                              package:m_package
+                              navElement:element] autorelease];
+    
+	if (c != nil) {
+		[self.navigationController pushViewController:c animated:YES];
+	}
+    
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 
