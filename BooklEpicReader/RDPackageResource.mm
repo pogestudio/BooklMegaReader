@@ -69,7 +69,7 @@
     }
     else
     {
-        UInt8 buffer[kSDKLauncherPackageResourceBufferSize];
+        UInt8 buffer[kPackageResourceBufferSize];
         std::size_t total = 0;
         std::size_t count = 0;
         while ((count = reader->read(buffer, sizeof(buffer))) > 0)
