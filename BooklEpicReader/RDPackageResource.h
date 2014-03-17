@@ -18,7 +18,7 @@
 //@end
 
 @interface RDPackageResource : NSObject {
-	@private UInt8 m_buffer[kSDKLauncherPackageResourceBufferSize];
+	@private UInt8 m_buffer[kPackageResourceBufferSize];
 	//@private id <RDPackageResourceDelegate> m_delegate;
 	@private NSString *m_relativePath;
 }
