@@ -9,6 +9,9 @@
 #import "BRFirstVC.h"
 #import "RDNavigationElement.h"
 #import "RDPackage.h"
+#import "RDContainer.h"
+
+#import "BREpubViewController.h"
 
 @interface BRFirstVC ()
 
@@ -32,33 +35,69 @@
 
 -(void)startReading
 {
-    //create element
+    //create container
+    RDContainer *container = [self createContainer];
     //create package
+    RDPackage *package = [self createPackageWithContainer:container];
     //start reading with elem and package
-}
-
--(void)createElement{
-        RDNavigationElement *element = [m_element.children objectAtIndex:indexPath.row];
-}
-
--(void)createPackage{
     
+    [self startReadingWithContainer:container package:package];
 }
 
--(void)startReadingWithElement:(RDNavigationElement*)element andPackage:(RDPackage*)package
+-(RDContainer*)createContainer{
+
+//    
+//    NSMutableArray *paths = [NSMutableArray arrayWithCapacity:16];
+//    
+//	NSString *docsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+//                                                              NSUserDomainMask, YES) objectAtIndex:0];
+//	NSFileManager *fm = [NSFileManager defaultManager];
+//    
+//	for (NSString *fileName in [fm contentsOfDirectoryAtPath:docsPath error:nil]) {
+//		if ([fileName.lowercaseString hasSuffix:@".epub"]) {
+//			[paths addObject:[docsPath stringByAppendingPathComponent:fileName]];
+//		}
+//	}
+//    
+//	[paths sortUsingComparator:^NSComparisonResult(NSString *path0, NSString *path1) {
+//		return [path0 compare:path1];
+//	}];
+//    
+//	NSString *onePath = [paths firstObject];
+//    
+    
+    
+    NSString* filePath = [[NSBundle mainBundle] pathForResource:@"titan"
+                                                         ofType:@"epub"];
+    
+    
+    RDContainer *container = [[RDContainer alloc] initWithPath:filePath];
+    if (container == nil || container.packages.count == 0) {
+        return nil;
+    }
+    
+    
+    return container;
+}
+
+
+-(RDPackage*)createPackageWithContainer:(RDContainer*)container{
+    
+    RDPackage *package = [container.packages objectAtIndex:0];
+    return package;
+}
+
+-(void)startReadingWithContainer:(RDContainer*)container package:(RDPackage*)package
 {
 
     
-	EPubViewController *c = [[[EPubViewController alloc]
-                              initWithContainer:m_container
-                              package:m_package
-                              navElement:element] autorelease];
+	BREpubViewController *c = [[BREpubViewController alloc]
+                              initWithContainer:container
+                               package:package];
     
 	if (c != nil) {
 		[self.navigationController pushViewController:c animated:YES];
 	}
-    
-	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 

@@ -59,8 +59,8 @@
 		[self release];
 		return nil;
 	}
-
-	if (self = [super initWithTitle:LocStr(@"METADATA") navBarHidden:NO]) {
+//[super initWithTitle:BRLocStr(@"METADATA") navBarHidden:NO]) {
+	if (self = [super initWithNibName:nil bundle:nil]){
 		m_package = [package retain];
 	}
 
@@ -77,37 +77,37 @@
 	[self.view addSubview:m_scroll];
 
 	m_labelTitle = [self addLabelWithText:
-		LocStr(@"METADATA_TITLE", m_package.title)];
+		BRLocStr(@"METADATA_TITLE", m_package.title)];
 
 	m_labelFullTitle = [self addLabelWithText:
-		LocStr(@"METADATA_FULL_TITLE", m_package.fullTitle)];
+		BRLocStr(@"METADATA_FULL_TITLE", m_package.fullTitle)];
 
 	m_labelSubtitle = [self addLabelWithText:
-		LocStr(@"METADATA_SUBTITLE", m_package.subtitle)];
+		BRLocStr(@"METADATA_SUBTITLE", m_package.subtitle)];
 
 	m_labelAuthors = [self addLabelWithText:
-		LocStr(@"METADATA_AUTHORS", m_package.authors)];
+		BRLocStr(@"METADATA_AUTHORS", m_package.authors)];
 
 	m_labelLanguage = [self addLabelWithText:
-		LocStr(@"METADATA_LANGUAGE", m_package.language)];
+		BRLocStr(@"METADATA_LANGUAGE", m_package.language)];
 
 	m_labelSource = [self addLabelWithText:
-		LocStr(@"METADATA_SOURCE", m_package.source)];
+		BRLocStr(@"METADATA_SOURCE", m_package.source)];
 
 	m_labelCopyrightOwner = [self addLabelWithText:
-		LocStr(@"METADATA_COPYRIGHT_OWNER", m_package.copyrightOwner)];
+		BRLocStr(@"METADATA_COPYRIGHT_OWNER", m_package.copyrightOwner)];
 
 	m_labelModificationDate = [self addLabelWithText:
-		LocStr(@"METADATA_MODIFICATION_DATE", m_package.modificationDateString)];
+		BRLocStr(@"METADATA_MODIFICATION_DATE", m_package.modificationDateString)];
 
 	m_labelPackageID = [self addLabelWithText:
-		LocStr(@"METADATA_PACKAGE_ID", m_package.packageID)];
+		BRLocStr(@"METADATA_PACKAGE_ID", m_package.packageID)];
 
 	m_labelISBN = [self addLabelWithText:
-		LocStr(@"METADATA_ISBN", m_package.isbn)];
+		BRLocStr(@"METADATA_ISBN", m_package.isbn)];
 
 	m_labelSubjects = [self addLabelWithText:
-		LocStr(@"METADATA_SUBJECTS", [m_package.subjects componentsJoinedByString:@", "])];
+		BRLocStr(@"METADATA_SUBJECTS", [m_package.subjects componentsJoinedByString:@", "])];
 }
 
 

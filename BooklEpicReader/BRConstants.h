@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #define kPackageResourceBufferSize 4096
+#define DEBUGLOG 1
 
 @interface BRConstants : NSObject
 
