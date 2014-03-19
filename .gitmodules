@@ -1,3 +1,0 @@
-[submodule "Framework/readium-sdk"]
-	path = Framework/readium-sdk
-	url = https://github.com/readium/readium-sdk.git
